@@ -3,8 +3,23 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Rotate calendar`,
-    siteUrl: `https://www.yourdomain.tld`
+    title: `Rotate calendar`
   },
-  plugins: ["gatsby-plugin-sass"]
+  plugins: [
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        additionalData: `@import "./src/styles/variables.scss";`,
+      }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "Rotate calendar",
+        short_name: "Rotate_calendar",
+        start_url: "/",
+        icon: "src/images/favicon.svg"
+      },
+    },
+  ]
 };

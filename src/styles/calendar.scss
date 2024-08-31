@@ -1,0 +1,17 @@
+@import './scroll.scss';
+
+.MuiDateCalendar-root {
+    border: 2px solid $main-text-color;
+    box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    transition: transform 0.3s cubic-bezier(0.4, 1.2, 0.6, 1);
+
+    &.is-rotate {
+        transform: rotate(180deg);
+        box-shadow: -20px -38px 34px -26px hsla(0,0%,0%,.2);
+    }
+
+    .MuiYearCalendar-root {
+        @extend .scroll;
+    }
+}
