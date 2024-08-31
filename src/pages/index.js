@@ -20,7 +20,7 @@ const IndexPage = () => {
   return (
     <main>
       <div className="wrapper">
-        <Typography variant="h3" component="h1" sx={{ mb: 2 }}>
+        <Typography variant="h3" component="h1" align="center" sx={{ mb: 2 }}>
           А скоро третье сентября?
         </Typography>
         <Counter />
