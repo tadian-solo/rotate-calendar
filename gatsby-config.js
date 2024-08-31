@@ -2,6 +2,7 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
+  pathPrefix: "/rotate-calendar",
   siteMetadata: {
     title: `Rotate calendar`
   },
